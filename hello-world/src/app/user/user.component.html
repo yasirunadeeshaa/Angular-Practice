@@ -1,0 +1,33 @@
+
+<h1 class="welcome">Welcome.!!!!!!</h1>
+<section class="border">
+  <form [formGroup]="profileForm" (ngSubmit)="handleSubmit()">
+    <div class="form-group">
+      <label for="username">Username : </label>
+      <input type="text" id="username" formControlName="name" placeholder="Enter your username" [(ngModel)]="username"/>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email : </label>
+      <input type="email" id="email" formControlName="email" placeholder="Enter your email" [(ngModel)]="email"/>
+    </div>
+
+    <div class="both">
+      @defer (on viewport) {
+        <p id="favourit">{{ username }}'s email is {{ email }}</p>}
+      @placeholder {<p>Future comments</p>}
+      @loading (minimum 10s) {<p>Loading comments...</p>}
+
+    </div>
+    </form>
+
+    <div>
+      <h2>Profile Form</h2>
+    <p>Name: {{ profileForm.value.name }}</p>
+    <p>Email: {{ profileForm.value.email }}</p>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" (click)="alertshow()">Submit</button>
+    </div>
+</section>

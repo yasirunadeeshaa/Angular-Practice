@@ -1,0 +1,21 @@
+h1{
+  text-align: center;
+  background-color: #69d9e7;
+
+}
+p{
+  font-weight: bold;
+  text-align:justify;
+}
+
+div.discription{
+  background-color: #beecf1;
+}
+body{
+  body{
+    background-image: src('./abcd.jpg');
+    background-size: cover; /* Ensures the image covers the entire page */
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-position: center center; /* Centers the image */
+}
+}

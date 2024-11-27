@@ -1,0 +1,97 @@
+body{
+  display: grid;
+  place-items: center; /* Center items vertically and horizontally */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default body margins */
+}
+.welcome{
+  text-align: center;
+}
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction:row;
+  width: 100%;
+  max-width: 400px;
+  align-self: start;
+}
+label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #0a324d;
+}
+input {
+  font-size: 14px;
+  padding: 10px 12px;
+  margin-left: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+input::placeholder {
+  color: #807c7c;
+  font-style: italic;
+}
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(1, 27, 54, 0.5);
+}
+input:disabled {
+  background-color: #b8a5a5;
+  color: #aaa;
+  border-color: #ddd;
+}
+button {
+  padding: 10px 15px;
+  margin:auto;
+  background-color: #3c6694;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #272829;
+}
+
+/* Button disabled state */
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.both{
+  background-color: #d2d6db;
+  width:400px;
+  padding: 0.5px;
+  padding-left: 10px;
+  font-weight: bold;
+  color: #00020c;
+  border-radius: 5px;
+  text-align: center;
+
+}
+.border{
+
+  align-items: center;
+  border: 2px solid #007bff; /* Solid border with blue color */
+  padding: 20px;            /* Inner spacing for content */
+  margin: 20px auto;           /* Spacing around the section */
+  border-radius: 8px;       /* Rounded corners */
+  background-color: #ffffff; /* Optional background color */
+  box-shadow: 15px 15px 10px  rgba(10, 69, 136, 0.1); /* Subtle shadow */
+  width:410px;
+  filter: blur(px);
+}
+@media (max-width: 768px) {
+  .border {
+    padding: 10px;
+    border-width: 1px;
+  }
+}
